@@ -124,6 +124,4 @@ Created by Anurag Sharma. Reach out at: `anuragparashar111@gmail.com`
 
 ---
 
-## 📁 Appendix (Optional)
 
-* Architecture PPT in `/docs/`
