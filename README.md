@@ -65,7 +65,6 @@ This project implements an **Agentic Retrieval-Augmented Generation (RAG)** chat
 
 ```bash
 git clone https://github.com/anurag26-q/Agentic-RAG-Chatbot-with-MCP
-cd agentic-rag-chatbot
 ```
 
 ### 2. Install Requirements
