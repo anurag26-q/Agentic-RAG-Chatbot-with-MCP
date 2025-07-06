@@ -29,7 +29,15 @@ class CoordinatorAgent:
                 print(f"❌ Error generating LLM answer: {e}")
                 raise e
 
-            return answer, mcp_search_msg.payload["top_chunks"]
+            # EXTRACT SOURCES FROM THE MESSAGE
+            sources = mcp_search_msg.payload["top_chunks"]
+            print(f"🔍 DEBUG: Found {len(sources)} sources")
+            
+            # DEBUG: Print first source to verify
+            if sources:
+                print(f"🔍 DEBUG: First source preview: {sources[0].page_content[:100]}...")
+            
+            return answer, sources
 
         except Exception as e:
             print(f"❌ Error in CoordinatorAgent: {e}")
