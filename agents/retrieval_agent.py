@@ -67,3 +67,4 @@ class RetrievalAgent:
         except Exception as e:
             print(f"❌ FAISS search failed: {e}")
             raise e
+        
